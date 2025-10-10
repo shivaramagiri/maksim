@@ -1,0 +1,52 @@
+/* custom.scss */
+@import "bootstrap/scss/functions";
+/* 1️⃣ Override Bootstrap variables (optional if using SCSS build) */
+/* Example: custom primary color */
+$theme-colors: (
+  "primary": rgba(5, 150, 105, 1), // purple
+  "secondary": #EA580C,
+  "success": #00b894
+);
+
+.btn-primary{
+  color: #ffff !important;    
+  background-color: rgba(5, 150, 105, 1);
+  border-color: #ffff;
+  border-radius: 20px !important;
+  padding: 10px 20px !important;
+  font-weight: bold !important;
+}
+
+// .btn-primary:hover{
+//   background-color: rgba(5, 150, 105, 1);
+//   border-color: #ffff;
+// }
+
+
+/* Customize btn-outline-primary */
+.btn-outline-primary {
+  color: #ffff !important;           /* text color */
+  border-color: #ffff !important;    /* border color */
+  background-color: transparent !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px !important;
+  padding: 10px 20px !important;
+  font-weight: bold !important;
+}
+
+/* Hover state */
+.btn-outline-primary:hover {
+  background-color: rgba(5, 150, 105, 1) !important; /* fill with your color */
+  color: #fff !important;               /* white text */
+}
+
+/* Active / Focused state */
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: rgba(5, 150, 105, 1) !important;
+  border-color: rgba(5, 150, 105, 1) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+@import "bootstrap/scss/bootstrap";

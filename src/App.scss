@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  height: auto; /* Ensure body & html take full viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  padding: 3rem 0;
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+}
+
+body {
+  background: linear-gradient(180deg, #1E3A8A 0%, #EA580C 100%);
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Optional: keeps gradient fixed on scroll */
+  background-size: cover; /* Make it cover full area */
+}
+
+.content{
+  font-family: poppins, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color:#ffff;
+}
+
+.p-heading{
+  font-size: 48px;
+}
+
+.b-highlight{
+  color: #EA580C;
+}
+
+.content-p-text{
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color:#ffff;
+}
+
+.video-frame {
+  width: 100%;           /* full width or adjust as needed */
+  max-width: 70%;      /* optional max width */
+  border-radius: 15px;   /* rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* soft shadow */
+  overflow: hidden;      /* ensures video follows border-radius */
+}
+
+.img-3d {
+  width: 70%; /* Adjust size as needed */
+  height: 70%;
+}
