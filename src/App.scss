@@ -32,6 +32,12 @@ body {
 
 .b-highlight{
   color: #EA580C;
+  font-weight: 700;
+}
+
+
+.font-clr{
+  color: #ffff;
 }
 
 .content-p-text{
@@ -54,10 +60,18 @@ body {
   height: 70%;
 }
 
+.mode-3d-container{
+
+}
+
 @media (max-width: 991px) {
   .video-frame {
     max-width: 100%;
     width: 100%;
     height: auto;
   }
+}
+
+.mode-3d-container{
+  margin: 4rem;
 }
