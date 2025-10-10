@@ -9,7 +9,7 @@ function App() {
     <div className="App gap-5 mb-5">
       <Header />
       <div className="px-4">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center">
           <div className="flex-grow m-5">
             <div className="content">
               <p className="p-heading">

@@ -53,3 +53,11 @@ body {
   width: 70%; /* Adjust size as needed */
   height: 70%;
 }
+
+@media (max-width: 991px) {
+  .video-frame {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

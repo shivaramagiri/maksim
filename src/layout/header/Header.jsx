@@ -29,7 +29,7 @@ export default function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
               {navItems.map((item) => (
                 <li key={item} className="nav-item">
                   <a
@@ -42,9 +42,7 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="d-flex gap-3">
+             <div className="d-flex gap-3">
             <button className="btn btn-outline-primary" type="button">
               Login
             </button>
@@ -52,6 +50,9 @@ export default function Header() {
               Register
             </button>
           </div>
+          </div>
+
+         
         </div>
       </nav>
     </header>
