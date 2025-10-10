@@ -27,3 +27,14 @@
     border-bottom:4px solid rgba(5, 150, 105, 1);
     display: inline-block; 
   }
+
+  .d-gap{
+    display: flex;
+    gap: 3rem;
+  }
+
+  @media (max-width: 991px) {
+    .d-gap{
+      row-gap: initial !important
+    }
+  }

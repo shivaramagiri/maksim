@@ -29,7 +29,7 @@ export default function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-gap">
               {navItems.map((item) => (
                 <li key={item} className="nav-item">
                   <a
