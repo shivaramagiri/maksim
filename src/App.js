@@ -35,14 +35,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="d-flex justify-content-start align-items-center m-5">
-            <img src={icon3d} alt="Maksim" className="img-3d" />
-          </div>
-        </div>
-      </div>
-
-      <div className="d-flex justify-content-between ps-5 gap-5">
-      <div className="video-frame">
+          <div className="video-frame">
           <video
             src="https://www.shutterstock.com/shutterstock/videos/3750282613/preview/stock-footage-background-architectural-layout-concept-schematic-drawing-of-house-rotates-loop-d-rendering.webm"
             autoPlay
@@ -52,6 +45,13 @@ function App() {
             preload="metadata" // or "auto" if file is optimized
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="d-flex justify-content-between ps-5 gap-5">
+    <div className="d-flex justify-content-start align-items-center m-5">
+            <img src={icon3d} alt="Maksim" className="img-3d" />
           </div>
           <div className="flex-grow m-5">
             <div className="content">
@@ -78,10 +78,7 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div className="d-flex justify-content-start align-items-center m-5">
-            <img src={icon3d} alt="Maksim" className="img-3d" />
-          </div> */}
-        </div>
+        </div> */}
     </div>
   );
 }
