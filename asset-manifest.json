@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/maksim/static/css/main.86f63f7b.css",
+    "main.js": "/maksim/static/js/main.7757dcf2.js",
+    "static/js/453.078e892a.chunk.js": "/maksim/static/js/453.078e892a.chunk.js",
+    "static/media/3dvideo.mp4": "/maksim/static/media/3dvideo.b034d829edd00daff137.mp4",
+    "static/media/icon3d.png": "/maksim/static/media/icon3d.9ccbb2dd68c8e6d988fd.png",
+    "static/media/logo.svg": "/maksim/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/maksim/index.html",
+    "main.86f63f7b.css.map": "/maksim/static/css/main.86f63f7b.css.map",
+    "main.7757dcf2.js.map": "/maksim/static/js/main.7757dcf2.js.map",
+    "453.078e892a.chunk.js.map": "/maksim/static/js/453.078e892a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f63f7b.css",
+    "static/js/main.7757dcf2.js"
+  ]
+}
