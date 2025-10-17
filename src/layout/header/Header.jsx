@@ -1,21 +1,30 @@
 import React, { useState } from "react";
-import maksim_logo from "../../assets/maksim_logo.png";
+import maksim_logo from "../../assets/m_logo.png";
 import "./Header.scss";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   // State to track which nav item is active
   const [activeLink, setActiveLink] = useState("Home");
 
   // List of nav items
-  const navItems = ["Home", "Services", "Industries", "Careers", "About", "Contact"];
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Industries", path: "/industries" },
+    { name: "Careers", path: "/career" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={maksim_logo} alt="Logo" />
-          </a>
+          <NavLink className="navbar-brand logo" to="/">
+            <img class="logo" src={maksim_logo} alt="Logo" />
+          </NavLink>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -32,27 +41,26 @@ export default function Header() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-gap">
               {navItems.map((item) => (
                 <li key={item} className="nav-item">
-                  <a
-                    className={`nav-link ${activeLink === item ? "active" : ""}`}
-                    href="#"
-                    onClick={() => setActiveLink(item)}
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `nav-link ${isActive ? "active" : ""}`
+                    }
                   >
-                    {item}
-                  </a>
+                    {item.name}
+                  </NavLink>
                 </li>
               ))}
             </ul>
-             <div className="d-flex gap-3">
-            <button className="btn btn-outline-primary" type="button">
-              Login
-            </button>
-            <button className="btn btn-outline-primary" type="button">
-              Register
-            </button>
+            <div className="d-flex gap-3">
+              <button className="btn btn-outline-primary" type="button">
+                Login
+              </button>
+              <button className="btn btn-outline-primary" type="button">
+                Register
+              </button>
+            </div>
           </div>
-          </div>
-
-         
         </div>
       </nav>
     </header>

@@ -33,6 +33,10 @@
     gap: 3rem;
   }
 
+  .logo{
+    width: 100px;
+  }
+
   @media (max-width: 991px) {
     .d-gap{
       row-gap: initial !important
